@@ -105,7 +105,64 @@ header{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 100%;
+    /* width: 100%; */
     
 }
+/*  secvices section start */
 
+#first-section{
+    background-color: rgb(3, 3, 41);
+    padding: 50px 0;
+}
+
+.services-title{
+    color: rgb(222, 100, 13);
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 3px;
+}
+
+#services-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1100px;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+.single-services{
+    text-align: center;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 3px solid green;
+    box-shadow: 3px 3px 4px grey;
+}
+.single-services i {
+    font-size: 40px;
+}
+.single-services h2{
+    margin: 10px 0;
+}
+
+/* services section responsive part start */
+
+@media only screen and (max-width:688px) {
+     #services-parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        grid-gap: 10px;
+     }
+
+
+}
+
+@media only screen and (min-width:689px) and (max-width:1099px) {
+    #services-parent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        grid-gap: 20px;
+
+    }
+}
