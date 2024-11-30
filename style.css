@@ -8,3 +8,104 @@
 body{
       font-family: "Montserrat"
 }
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(8, 3, 41);
+    height: 80px;
+    align-items: center;
+    padding: 0 15px;
+}
+.logo{
+    color: white;
+    margin-left: 20px;
+}
+.navigation > ul {
+    margin-right: 20px;
+    display: flex;
+    transition: all 0.5s ease;
+}
+.navigation > ul > li{
+    list-style: none;
+    margin-right: 15px;
+}
+.navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 7px 10px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.navigation > ul > li > a:hover{
+    background-color: #566573;
+    border-radius: 4px;
+}
+
+.logo-span{
+    font-size:30px;
+    color: rgb(255, 0, 187);
+}
+
+#click{
+    display: none;
+}
+
+.menu-btn{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click:checked ~ul {
+    left: 0;
+   
+}
+
+#click:checked ~.menu-btn i::before{
+    content: '\f00d';
+
+}
+
+/* responsive navigation part */
+@media only screen and (max-width:940px) {
+    .navigation>ul {
+        position:fixed;
+        top: 80px;
+     
+        background-color: rgb(6, 123, 218);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        left: -100%;
+    }
+    .navigation > ul > li{
+        margin: 20px 0;
+    }
+
+    .navigation > ul > li > a{
+        font-size: 20px;
+    }
+    .navigation > ul > li > a:hover{
+        background: none;
+        color: rgb(39, 7, 53);
+    }
+    .menu-btn{
+        display:block;
+    }
+}
+
+/* header section start */
+header{
+    background-image: url('image/pexels-djordje-petrovic-590080-2102416.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+
