@@ -495,3 +495,71 @@ form p{
     padding: 30px  30px;
    }    
 }
+
+/* 
+    <!-- match section start --> */
+
+    #sixth-section{
+        background-color: #07254F;
+        padding: 100px 0;
+    }
+
+    .match-parent {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 200px;
+        margin-right:200px ;
+        grid-gap: 45px;
+        color: white;
+    }
+   
+
+    .single-match {
+        border: 4px solid #26528F;
+        padding: 20px;
+        text-align: justify;
+    }
+   
+    .single-match i {
+        font-size:40px;
+        padding: 0px 20px 10px 20px;
+    }
+
+    .single-match h5{
+        margin-bottom: 10px;
+    }
+
+    .single-match p{
+        font-size: small;
+        color: gray;
+    }
+    .single-match:nth-child(2){
+        border: 4px solid white;
+    }
+
+    @media screen and (max-width:688px) {
+           .match-parent {
+            display: grid;
+            grid-template-columns: repeat( 1,1fr);
+            grid-gap: 10px;
+            margin: 0 30px;
+           } 
+           
+           .first-single-match{
+             text-align: center;
+           }
+    }
+
+
+    @media screen and (min-width:689px) and (max-width:1099px) {
+        .match-parent {
+         display: grid;
+         grid-template-columns: repeat( 2,1fr);
+         grid-gap: 30px;
+         margin: 0 50px;
+        } 
+        
+        .first-single-match{
+          text-align: center;
+        }
+ }
