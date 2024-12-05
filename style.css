@@ -101,11 +101,12 @@ body{
 /* header section start */
 header{
     background-image: url('image/pexels-djordje-petrovic-590080-2102416.jpg');
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     /* width: 100%; */
+    
     
 }
 /*  secvices section start */
@@ -113,6 +114,7 @@ header{
 #first-section{
     background-color: rgb(3, 3, 41);
     padding: 50px 0;
+   
 }
 
 .services-title{
@@ -562,4 +564,58 @@ form p{
         .first-single-match{
           text-align: center;
         }
+ } 
+
+ /* take care section */
+
+#take-care-section{
+    padding: 100px 0;
+}
+
+ #takeCare-parent{
+    display: flex;
+    margin: 0 200px;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .single-takeCare-imgbox{
+    width: 100%;
+ }
+
+ .single-takeCare-imgbox img{
+    width: 100%;
+ }
+ .single-takeCare h3{
+      font-size: 30px;
+ }
+ .single-takeCare p{
+    margin: 20px 0;
+ }
+
+ .single-takeCare ul li {
+    list-style-position: inside;
+    margin: 10px 0;
+ }
+
+ @media screen and (max-width:688px) {
+    #takeCare-parent{
+        display:block;
+        margin: 0 30px;
+       
+    }
+    .single-takeCare{
+        margin-bottom: 70px;
+    } 
+ }
+
+
+ @media screen and (min-width:689px) and (max-width:1099px) {
+    #takeCare-parent{
+        display:block;
+        margin: 0 60px;
+       
+    }
+    .single-takeCare{
+        margin-bottom: 70px;
+    } 
  }
